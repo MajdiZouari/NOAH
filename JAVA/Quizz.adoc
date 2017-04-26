@@ -20,7 +20,7 @@ icon:tags[]
  *  What are the important differences between C++ and Java?
  *  What is the role for a classloader in Java?
  
- == Wrapper Classes
+== Wrapper Classes
  
  *  What are Wrapper classes?
  *  Why do we need Wrapper classes in Java?
@@ -107,7 +107,7 @@ icon:tags[]
   *  What happens when a variable is marked as volatile?
   *  What is a static variable?
   
- == conditions & loops
+== conditions & loops
  
   *  Why should you always use blocks around if statement?
   *  Guess the output
