@@ -1,4 +1,12 @@
 = Quiz
+:toc:
+:toclevels: 3
+:toc-placement: preamble
+:lb: pass:[<br> +]
+:imagesdir: ../images
+:icons: font
+:source-highlighter: highlightjs
+
 == Java Platform
 
  *  Why is Java so popular?
