@@ -1,12 +1,8 @@
 = Quiz
+
 :toc:
-:toclevels: 3
-:toc-placement: preamble
-:lb: pass:[<br> +]
-:imagesdir: ../images
-:icons: font
-:source-highlighter: highlightjs
-icon:tags[] Key words : Java Basic stuff
+:toclevels: 2
+
 
 // ifdef::env-github[]
 // https://www.youtube.com/watch?v=XXXXXX[vidéo de la présentation sur YouTube]
