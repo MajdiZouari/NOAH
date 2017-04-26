@@ -8,9 +8,7 @@
 :source-highlighter: highlightjs
 icon:tags[]
 
-
 == Java Platform
-
  *  Why is Java so popular?
 -----------------
  u serious ?
@@ -22,9 +20,7 @@ icon:tags[]
  *  What are the important differences between C++ and Java?
  *  What is the role for a classloader in Java?
  
-== Wrapper Classes
-
-
+ == Wrapper Classes
  *  What are Wrapper classes?
  *  Why do we need Wrapper classes in Java?
  *  What are the different ways of creating Wrapper class instances?
@@ -36,8 +32,6 @@ icon:tags[]
   *  What is explicit casting?
   
 == Strings
-
-
   *  Are all String’s immutable?
   *  Where are String values stored in memory?
   *  Why should you be careful about String concatenation(+) operator in loops?
@@ -46,10 +40,7 @@ icon:tags[]
   *  What are differences between StringBuilder and StringBuffer?
   *  Can you give examples of different utility methods in String class?
   
-  
 == Object oriented programming basics
-
-
   *  What is a class?
   *  What is an object?
   *  What is state of an object?
@@ -82,11 +73,8 @@ icon:tags[]
   *  What is the use of this()?
   *  Can a constructor be called directly from a method?
   *  Is a super class constructor called even when there is no explicit call from a sub class constructor?
-  
-  
+ 
 == Advanced object oriented concepts
-
-
   *  What is polymorphism?
   *  What is the use of instanceof operator in Java?
   *  What is coupling?
@@ -96,11 +84,8 @@ icon:tags[]
   *  What is a static inner class?
   *  Can you create an inner class inside a method?
   *  What is an anonymous class?
-  
-  
+   
 == Modifiers
-
-
   *  What is default class modifier?
   *  What is private access modifier?
   *  What is default or package access modifier?
@@ -117,10 +102,7 @@ icon:tags[]
   *  What happens when a variable is marked as volatile?
   *  What is a static variable?
   
-  
-== conditions & loops
-
-
+ == conditions & loops
   *  Why should you always use blocks around if statement?
   *  Guess the output
   *  Guess the output
@@ -133,9 +115,8 @@ icon:tags[]
   *  What is the output of the for loop below?
   *  What is the output of the program below?
   *  What is the output of the program below?
+  
 == Exception handling
-
-
   *  Why is exception handling important?
   *  What design pattern is used to implement exception handling features in most languages?
   *  What is the need for finally block?
@@ -154,11 +135,8 @@ icon:tags[]
  *  Can you explain about try with resources?
  *  How does try with resources work?
  *  Can you explain a few exception handling best practices?
- 
- 
+  
 == Miscellaneous topics
-
-
  *  What are the default values in an array?
  *  How do you loop around an array using enhanced for loop?
  *  How do you print the content of an array?
@@ -185,10 +163,7 @@ icon:tags[]
  *  Are the constructors in an object invoked when it is de-serialized?
  *  Are the values of static variables stored when an object is serialized?
  
- 
 == Collections
-
-
  *  Why do we need collections in Java?
  *  What are the important interfaces in the collection hierarchy?
  *  What are the important methods that are declared in the collection interface?
@@ -222,11 +197,8 @@ icon:tags[]
  *  What is a TreeMap? How is different from a HashMap?
  *  Can you give an example of implementation of navigableMap interface?
  *  What are the static methods present in the collections class?
- 
- 
+  
 == Advanced collections
-
-
  *  What is the difference between synchronized and concurrent collections in Java?
  *  Explain about the new concurrent collections in Java?
  *  Explain about copyonwrite concurrent collections approach?
@@ -238,11 +210,8 @@ icon:tags[]
  *  What is difference between fail-safe and fail-fast iterators?
  *  What are atomic operations in Java?
  *  What is BlockingQueue in Java?
- 
- 
+  
 == Generics
-
-
  *  What are Generics?
  *  Why do we need Generics? Can you give an example of how Generics make a program more flexible?
  *  How do you declare a generic class?
@@ -251,10 +220,7 @@ icon:tags[]
  *  How can we restrict Generics to a super class of particular class?
  *  Can you give an example of a generic method?
  
- 
 == Multi threading
-
-
  *  What is the need for threads in Java?
  *  How do you create a thread?
  *  How do you create a thread by extending thread class?
@@ -278,11 +244,8 @@ icon:tags[]
  *  What is the use of notify method?
  *  What is the use of notifyall method?
  *  Can you write a synchronized program with wait and notify methods?
- 
- 
+  
 == Functional Programming - Lamdba expressions and Streams
-
-
  *  What is functional programming?
  *  Can you give an example of functional programming?
  *  What is a stream?
@@ -297,11 +260,8 @@ icon:tags[]
  *  What is the functional interface - function?
  *  What is a consumer?
  *  Can you give examples of functional interfaces with multiple arguments?
- 
- 
+  
 == New Features
-
-
  *  What are the new features in Java 5?
  *  What are the new features in Java 6?
  *  What are the new features in Java 7?
