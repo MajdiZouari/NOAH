@@ -1,4 +1,5 @@
-Java Platform
+= Quiz
+== Java Platform
 
  *  Why is Java so popular?
 -----------------
@@ -11,7 +12,7 @@ Java Platform
  *  What are the important differences between C++ and Java?
  *  What is the role for a classloader in Java?
  
-Wrapper Classes
+== Wrapper Classes
 
 
  *  What are Wrapper classes?
@@ -24,7 +25,7 @@ Wrapper Classes
   *  What is implicit casting?
   *  What is explicit casting?
   
-Strings
+== Strings
 
 
   *  Are all String’s immutable?
@@ -34,7 +35,7 @@ Strings
   *  What are differences between String and StringBuffer?
   *  What are differences between StringBuilder and StringBuffer?
   *  Can you give examples of different utility methods in String class?
-Object oriented programming basics
+== Object oriented programming basics
 
 
   *  What is a class?
@@ -69,7 +70,7 @@ Object oriented programming basics
   *  What is the use of this()?
   *  Can a constructor be called directly from a method?
   *  Is a super class constructor called even when there is no explicit call from a sub class constructor?
-Advanced object oriented concepts
+== Advanced object oriented concepts
 
 
   *  What is polymorphism?
@@ -81,7 +82,7 @@ Advanced object oriented concepts
   *  What is a static inner class?
   *  Can you create an inner class inside a method?
   *  What is an anonymous class?
-Modifiers
+== Modifiers
 
 
   *  What is default class modifier?
@@ -99,7 +100,7 @@ Modifiers
   *  What is a final argument?
   *  What happens when a variable is marked as volatile?
   *  What is a static variable?
-conditions & loops
+== conditions & loops
 
 
   *  Why should you always use blocks around if statement?
@@ -114,7 +115,7 @@ conditions & loops
   *  What is the output of the for loop below?
   *  What is the output of the program below?
   *  What is the output of the program below?
-Exception handling
+== Exception handling
 
 
   *  Why is exception handling important?
@@ -135,7 +136,7 @@ Exception handling
  *  Can you explain about try with resources?
  *  How does try with resources work?
  *  Can you explain a few exception handling best practices?
-Miscellaneous topics
+== Miscellaneous topics
 
 
  *  What are the default values in an array?
@@ -163,7 +164,7 @@ Miscellaneous topics
  *  How do you serialize a hierarchy of objects?
  *  Are the constructors in an object invoked when it is de-serialized?
  *  Are the values of static variables stored when an object is serialized?
-Collections
+== Collections
 
 
  *  Why do we need collections in Java?
@@ -199,7 +200,7 @@ Collections
  *  What is a TreeMap? How is different from a HashMap?
  *  Can you give an example of implementation of navigableMap interface?
  *  What are the static methods present in the collections class?
-Advanced collections
+== Advanced collections
 
 
  *  What is the difference between synchronized and concurrent collections in Java?
@@ -213,7 +214,7 @@ Advanced collections
  *  What is difference between fail-safe and fail-fast iterators?
  *  What are atomic operations in Java?
  *  What is BlockingQueue in Java?
-Generics
+== Generics
 
 
  *  What are Generics?
@@ -223,7 +224,7 @@ Generics
  *  How can we restrict Generics to a subclass of particular class?
  *  How can we restrict Generics to a super class of particular class?
  *  Can you give an example of a generic method?
-Multi threading
+== Multi threading
 
 
  *  What is the need for threads in Java?
@@ -249,14 +250,14 @@ Multi threading
  *  What is the use of notify method?
  *  What is the use of notifyall method?
  *  Can you write a synchronized program with wait and notify methods?
-Functional Programming - Lamdba expressions and Streams
+== Functional Programming - Lamdba expressions and Streams
 
 
  *  What is functional programming?
  *  Can you give an example of functional programming?
  *  What is a stream?
  *  Explain about streams with an example?
-what are intermediate operations in streams?
+ *  what are intermediate operations in streams?
  *  What are terminal operations in streams?
  *  What are method references?
  *  What are lambda expressions?
@@ -266,7 +267,7 @@ what are intermediate operations in streams?
  *  What is the functional interface - function?
  *  What is a consumer?
  *  Can you give examples of functional interfaces with multiple arguments?
-New Features
+== New Features
 
 
  *  What are the new features in Java 5?
