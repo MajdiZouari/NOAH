@@ -7,6 +7,8 @@
 :icons: font
 :source-highlighter: highlightjs
 icon:tags[]
+
+
 == Java Platform
 
  *  Why is Java so popular?
@@ -43,6 +45,8 @@ icon:tags[]
   *  What are differences between String and StringBuffer?
   *  What are differences between StringBuilder and StringBuffer?
   *  Can you give examples of different utility methods in String class?
+  
+  
 == Object oriented programming basics
 
 
@@ -78,6 +82,8 @@ icon:tags[]
   *  What is the use of this()?
   *  Can a constructor be called directly from a method?
   *  Is a super class constructor called even when there is no explicit call from a sub class constructor?
+  
+  
 == Advanced object oriented concepts
 
 
@@ -90,6 +96,8 @@ icon:tags[]
   *  What is a static inner class?
   *  Can you create an inner class inside a method?
   *  What is an anonymous class?
+  
+  
 == Modifiers
 
 
@@ -108,6 +116,8 @@ icon:tags[]
   *  What is a final argument?
   *  What happens when a variable is marked as volatile?
   *  What is a static variable?
+  
+  
 == conditions & loops
 
 
@@ -144,6 +154,8 @@ icon:tags[]
  *  Can you explain about try with resources?
  *  How does try with resources work?
  *  Can you explain a few exception handling best practices?
+ 
+ 
 == Miscellaneous topics
 
 
@@ -172,6 +184,8 @@ icon:tags[]
  *  How do you serialize a hierarchy of objects?
  *  Are the constructors in an object invoked when it is de-serialized?
  *  Are the values of static variables stored when an object is serialized?
+ 
+ 
 == Collections
 
 
@@ -208,6 +222,8 @@ icon:tags[]
  *  What is a TreeMap? How is different from a HashMap?
  *  Can you give an example of implementation of navigableMap interface?
  *  What are the static methods present in the collections class?
+ 
+ 
 == Advanced collections
 
 
@@ -222,6 +238,8 @@ icon:tags[]
  *  What is difference between fail-safe and fail-fast iterators?
  *  What are atomic operations in Java?
  *  What is BlockingQueue in Java?
+ 
+ 
 == Generics
 
 
@@ -232,6 +250,8 @@ icon:tags[]
  *  How can we restrict Generics to a subclass of particular class?
  *  How can we restrict Generics to a super class of particular class?
  *  Can you give an example of a generic method?
+ 
+ 
 == Multi threading
 
 
@@ -258,6 +278,8 @@ icon:tags[]
  *  What is the use of notify method?
  *  What is the use of notifyall method?
  *  Can you write a synchronized program with wait and notify methods?
+ 
+ 
 == Functional Programming - Lamdba expressions and Streams
 
 
@@ -275,6 +297,8 @@ icon:tags[]
  *  What is the functional interface - function?
  *  What is a consumer?
  *  Can you give examples of functional interfaces with multiple arguments?
+ 
+ 
 == New Features
 
 
@@ -282,3 +306,4 @@ icon:tags[]
  *  What are the new features in Java 6?
  *  What are the new features in Java 7?
  *  What are the new features in Java 8?
+ *  What are the new features in Java 9?
