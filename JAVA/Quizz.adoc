@@ -1,6 +1,10 @@
 Java Platform
 
  *  Why is Java so popular?
+-----------------
+ u serious ?
+-----------------
+ 
  *  What is platform independence?
  *  What is bytecode?
  *  Compare JDK vs JVM vs JRE 
