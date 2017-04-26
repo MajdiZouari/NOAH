@@ -6,7 +6,7 @@
 :imagesdir: ../images
 :icons: font
 :source-highlighter: highlightjs
-
+icon:tags[]
 == Java Platform
 
  *  Why is Java so popular?
