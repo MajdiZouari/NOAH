@@ -6,7 +6,14 @@
 :imagesdir: ../images
 :icons: font
 :source-highlighter: highlightjs
-icon:tags[]
+icon:tags[] Key words : Java Basic stuff
+
+// ifdef::env-github[]
+// https://www.youtube.com/watch?v=XXXXXX[vidéo de la présentation sur YouTube]
+// endif::[]
+// ifdef::env-browser[]
+// video::XXXXXX[youtube, width=640, height=480]
+// endif::[]
 
 == Java Platform
  *  Why is Java so popular?
