@@ -56,7 +56,10 @@
   *  What are the important things to consider when implementing equals method?
   *  What is the Hashcode method used for in Java?
 -----------------
-Le Hashcode est une représentation numérique du 'contenu' de l'objet. Il sert à représenter l'objet dans les collections hashées (hashset, hashmap). Deux Objets égaux ont le même hashcode. De ce fait, il sert de clé d'unicité dans ces collections. Par conséquent, il est important de réimplémenter Hashcode si on rééimplemente "equals" pour garder cette cohérence.
+Le Hashcode est une représentation numérique du 'contenu' de l'objet.
+Il sert à représenter l'objet dans les collections hashées (hashset, hashmap).
+Deux Objets égaux ont le même hashcode. De ce fait, il sert de clé d'unicité dans ces collections.
+Par conséquent, il est important de réimplémenter Hashcode si on rééimplemente "equals" pour garder cette cohérence.
 -----------------
   *  Explain inheritance with examples . 
   *  What is method overloading?
