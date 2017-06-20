@@ -1,0 +1,15 @@
+
+* Qu'est ce que le hachage ? A quoi sert la méthode hashCode ?
+
+-----------------
+Chaque Instance Java d'une classe Object implémente la méthode hashCode qui permet de calculer une valeur numérique décrivant l'objet.
+Ce hashcode permet d'identifier un objet quand il est affecté une collection d'objet ( i.e de type Map, set..).
+Par exemple l'unicité d'un Objet dans un Set dépend de l'unicité de son Hashcode.
+-----------------
+
+* Comment trier une liste de chaine de caractère ? Connaissez-vous des algorithmes de tri ?
+
+-----------------
+
+
+-----------------
