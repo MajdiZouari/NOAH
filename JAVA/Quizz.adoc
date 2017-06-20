@@ -17,14 +17,20 @@
 -----------------
  
  *  What is platform independence?
+ 
 -----------------
-"Write Once, Run Evrywhere" est le moto de Java. En fait, l'indépendance du système consiste à développer le même code quel que soit la plateforme sur laquelle il tourne.
+"Write Once, Run Evrywhere" est le moto de Java. En fait, l'indépendance du système consiste 
+à développer le même code quel que soit la plateforme sur laquelle il tourne.
 ----------------- 
+
  *  What is bytecode?
+ 
 -----------------
 Une fois le code est compilé, il en génére du bytecode qui sera exécuté sur la JVM.
 ----------------- 
+
  *  Compare JDK vs JVM vs JRE 
+ 
  -----------------
 JVM : charge et exécute le code et provide un runtime envirement
 JRE : est une implémentation de la JVM avec d'autres librairies
@@ -32,10 +38,12 @@ JDK : Offre avec la JRE toutes les librairies nécessaires au développement et 
 ----------------- 
  
  *  What are the important differences between C++ and Java?
+ 
 -----------------
 C++ n'est pas un language Platfrom dependant. Il tourne pas sur une VM.
 JAVA ne permet pas l'héritage multiple.
 -----------------  
+
  *  What is the role for a classloader in Java?
  
 == Wrapper Classes
