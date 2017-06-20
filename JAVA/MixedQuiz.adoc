@@ -10,6 +10,54 @@ Par exemple l'unicité d'un Objet dans un Set dépend de l'unicité de son Hashc
 * Comment trier une liste de chaine de caractère ? Connaissez-vous des algorithmes de tri ?
 
 -----------------
+Il suffit d'utiliser Collections.sort().
+Les algo de tri : Par insertion, par tas, par fusion.
+-----------------
 
+* Comment désigne-t-on la complexité d'un algorithme ?
 
 -----------------
+* Complexité Temporelle : nombre d'instructions élementaires à exécuter
+* Complexité Spaciale : mémoire nécessaire à l'execution de l'algorithme
+-----------------
+
+* Que permet le pattern stratégie ?  Sinon présentez un pattern maitrisé..
+
+-----------------
+
+-----------------
+
+
+* Quels sont les verbes HTTP d'une architecture REST ? 
+-----------------
+
+-----------------
+
+* Comment développer  un client WS SOAP ? 
+-----------------
+
+-----------------
+
+* Quels sont les phases d'un build Maven ? 
+-----------------
+
+-----------------
+
+* Java 8 : Que désigne les lambda expressions ? les Streams, les collectors ? 
+-----------------
+
+-----------------
+
+* Qu'est ce que le TDD, le BDD ? La différence entre un test unitaire et d'intégration ? 
+-----------------
+
+-----------------
+
+* Que permet Docker ?
+
+-----------------
+
+-----------------
+
+
+
