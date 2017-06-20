@@ -31,7 +31,7 @@ Une fois le code est compilé, il en génére du bytecode qui sera exécuté sur
 
  *  Compare JDK vs JVM vs JRE 
  
- -----------------
+-----------------
 JVM : charge et exécute le code et provide un runtime envirement
 JRE : est une implémentation de la JVM avec d'autres librairies
 JDK : Offre avec la JRE toutes les librairies nécessaires au développement et à la compilation du code
@@ -45,6 +45,12 @@ JAVA ne permet pas l'héritage multiple.
 -----------------  
 
  *  What is the role for a classloader in Java?
+-----------------
+Le classloader: vérifie le nom d'une classe, si une classe a déjà été chargée,
+vérifie si la classe est une classe Système. Résoud la classe et retourne la classe
+à son appelant. 
+-----------------  
+ 
  
 == Wrapper Classes
  
