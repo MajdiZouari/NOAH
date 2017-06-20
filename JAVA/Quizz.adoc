@@ -55,6 +55,9 @@ vérifie si la classe est une classe Système. Résoud la classe et retourne la 
 == Wrapper Classes
  
  *  What are Wrapper classes?
+-----------------
+Depuis Java 5 et l'introduction du autoboxing at unboxing, on est capable d'int
+----------------- 
  *  Why do we need Wrapper classes in Java?
  *  What are the different ways of creating Wrapper class instances?
   *  What are differences in the two ways of creating Wrapper classes?
