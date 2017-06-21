@@ -56,13 +56,30 @@ vérifie si la classe est une classe Système. Résoud la classe et retourne la 
  
  *  What are Wrapper classes?
 -----------------
-Depuis Java 5 et l'introduction du autoboxing at unboxing, on est capable d'int
+Depuis Java 5 et l'introduction du autoboxing at unboxing, on est capable de passer d'un type natif à un objet directement. i.e de int vers Integer, de boolean à Boolean.. etc la classe Boolean est une wrapper class de boolean
 ----------------- 
  *  Why do we need Wrapper classes in Java?
- *  What are the different ways of creating Wrapper class instances?
+----------------- 
+Pour qu'on puisse ajouter un l'objet dans une collection.
+Pour que null soit possible..
+-----------------  
+  *  What are the different ways of creating Wrapper class instances?
+-----------------  
+1- Par construction ; un constructeur qui prend en entrée la valeur du type primitif ou a représentation en String de la valeur.
+2- Par methode static ; une méthode static valueOf() de la classe wrapper qui permet de crée l'objet.
+-----------------  
   *  What are differences in the two ways of creating Wrapper classes?
+-----------------  
+La différence est que la première fait appel à un constructeur et l'autre à une méthode static !
+-----------------    
   *  What is auto boxing?
+-----------------
+C'est la conversion automatique entre les wrapper objects et leur type primitif correspondant
+-----------------    
   *  What are the advantages of auto boxing?
+-----------------  
+L'avantage ; plus simple à écrire.. un souci en moins...
+-----------------    
   *  What is casting?
   *  What is implicit casting?
   *  What is explicit casting?
