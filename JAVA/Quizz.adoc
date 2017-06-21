@@ -81,8 +81,28 @@ C'est la conversion automatique entre les wrapper objects et leur type primitif 
 L'avantage ; plus simple à écrire.. un souci en moins...
 -----------------    
   *  What is casting?
+-----------------
+Il s'agit de la conversion d'un primitive, interface ou classe à un/une autre.
+Pour les classes et les interfaces, une règle à respecter est de caster celles qui ont le même Type Hierarchy. Sinon une ClassCastException sera lancée.
+----------------- 
+  
   *  What is implicit casting?
+----------------- 
+Implicit quand il s'agit du widening pour les primitifs : byte -> short -> int -> long -> float -> double
+ byte i = 50;
+ short j = i;
+ int k = j;
+ long l = k;
+ float m = l;
+ double n = m;
+Pour les classes. Si Child extends Parent, on peut écrire Parent p = new Child();
+----------------- 
   *  What is explicit casting?
+----------------- 
+L'explicite est quand on veut faire du narrowing : double -> float -> long -> int -> short -> byte
+le narrowing est impossible pr les classes
+----------------- 
+  
   
 == Strings
 
