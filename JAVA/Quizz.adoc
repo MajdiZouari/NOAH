@@ -131,15 +131,25 @@ Par contre si on se contentait d'appender un string dans un stringBuilder,
 On économise de la mémoire (des obj qui servent à rien)
 -----------------
   *  How do you solve above problem?
- -----------------
+-----------------
  StringBuiler strBuilder = new StringBuiler('first');
  for(){
  strBuilder.append(str);
  }
- -----------------
+-----------------
   *  What are differences between String and StringBuffer?
+-----------------
+String est Immutable, override equals et lent à la concaténation de string
+StringBuffer est mutable, ne overides pas equals et rapide à la concaténation
+-----------------
   *  What are differences between StringBuilder and StringBuffer?
+-----------------
+StringBuffer est sychronized, ce qui n'est pas le cas pour StringBuilder.
+-----------------
   *  Can you give examples of different utility methods in String class?
+-----------------
+trim, substring, unquote...
+-----------------
   
 == Object oriented programming basics
 
