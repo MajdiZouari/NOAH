@@ -110,7 +110,16 @@ le narrowing est impossible pr les classes
 == Strings
 
   *  Are all String’s immutable?
+----------------- 
+Jusqu'à preuve du contraire ; OUI !
+----------------- 
   *  Where are String values stored in memory?
+-----------------
+Si le string est créé par constructeur (String str = new String("Hello");) 
+alors il sera enregistré dans la Heap Space comme tout autre objet.
+Si le string est déclaré comme litteral (String str = "Hello";)
+Alors il est dans la "string constant pool"
+----------------- 
   *  Why should you be careful about String concatenation(+) operator in loops?
   *  How do you solve above problem?
   *  What are differences between String and StringBuffer?
