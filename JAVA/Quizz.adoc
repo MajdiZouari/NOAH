@@ -121,7 +121,22 @@ Si le string est déclaré comme litteral (String str = "Hello";)
 Alors il est dans la "string constant pool"
 ----------------- 
   *  Why should you be careful about String concatenation(+) operator in loops?
+-----------------
+String étant immutable, quand on concatène string litterals dans une boucle :
+for(){
+out += Str;
+}
+à chaque itération on crée un nouvel objet dans la heap space. 
+Par contre si on se contentait d'appender un string dans un stringBuilder,
+On économise de la mémoire (des obj qui servent à rien)
+-----------------
   *  How do you solve above problem?
+ -----------------
+ StringBuiler strBuilder = new StringBuiler('first');
+ for(){
+ strBuilder.append(str);
+ }
+ -----------------
   *  What are differences between String and StringBuffer?
   *  What are differences between StringBuilder and StringBuffer?
   *  Can you give examples of different utility methods in String class?
