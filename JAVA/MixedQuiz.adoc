@@ -12,7 +12,11 @@ Par exemple l'unicité d'un Objet dans un Set dépend de l'unicité de son Hashc
 * Comment trier une liste de chaine de caractère ? Connaissez-vous des algorithmes de tri ?
 
 -----------------
-Il suffit d'utiliser Collections.sort().
+Java7 : Il suffit d'utiliser Collections.sort().
+Java8 : Utiliser les streams. Exemple :
+String[] str = new String[] { "a", "b", "c" };
+List<String> list = Arrays.asList(str);
+list.stream().sorted().forEach(e -> System.out.println(e));
 Les algo de tri : Par insertion, par tas, par fusion.
 -----------------
 
