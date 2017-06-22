@@ -170,9 +170,25 @@ l'état d'un objet se traduit par ses attributs
 Se sont plutot les méthodes qui décrivent ici le comportement d'un objet.
 -----------------
   *  What is the super class of every class in Java?
+-----------------
+Object
+-----------------  
   *  Explain about toString method ?
+-----------------
+Une méthode qui permet d'avoir une représentation en chaine de charatere de l'objet.
+Une méthode une fois overridden permet d'afficher la valeur d'un objet. 
+sinon, de base, elle affiche le hashcode de l'objet
+-----------------  
   *  What is the use of equals method in Java?
+-----------------  
+Elle sert principalement à comparer deux objets. de base, elle compare les deux hashcode de deux objets.
+-----------------  
   *  What are the important things to consider when implementing equals method?
+-----------------  
+Deux objets égaux, ont le même hashcode. Si on reimplemente equals, il faut reimplémenter hashcode
+pour garder une cohérence. surtout si les objets sont utilisés dans des collections..
+-----------------  
+  
   *  What is the Hashcode method used for in Java?
 -----------------
 Le Hashcode est une représentation numérique du 'contenu' de l'objet.
@@ -181,8 +197,22 @@ Deux Objets égaux ont le même hashcode. De ce fait, il sert de clé d'unicité
 Par conséquent, il est important de réimplémenter Hashcode si on rééimplemente "equals" pour garder cette cohérence.
 -----------------
   *  Explain inheritance with examples . 
+-----------------
+L'héritage.. c'est quand une classe hérite les attributs et les méthodes d'une classe mère.
+Par exemple un Camion hérite d'un Véhicule. Ainsi qu'une Voiture hérite d'un Véhicule.
+-----------------
+  
   *  What is method overloading?
+-----------------
+Surcharger une méthode consiste à utiliser la même signature d'une méthode, tout en changeant
+le nombre et/ou le type des paramètres d'entrée.
+-----------------
+  
   *  What is method overriding?
+-----------------
+Il s'agit de réimplémenter une méthode qu'on hérite d'une classe mère ou qu'on implémente d'une interface
+-----------------
+  
   *  Can super class reference variable can hold an object of sub class?
   *  Is multiple inheritance allowed in Java?
   *  What is an interface?
