@@ -154,9 +154,21 @@ trim, substring, unquote...
 == Object oriented programming basics
 
   *  What is a class?
+-----------------
+C'est un bluePrint d'un objet ! une squelette..
+-----------------
   *  What is an object?
+-----------------
+L'objet est une instance d'une classe. il a un état et un comportement..
+-----------------
   *  What is state of an object?
+-----------------
+l'état d'un objet se traduit par ses attributs
+-----------------
   *  What is behavior of an object?
+-----------------
+Se sont plutot les méthodes qui décrivent ici le comportement d'un objet.
+-----------------
   *  What is the super class of every class in Java?
   *  Explain about toString method ?
   *  What is the use of equals method in Java?
