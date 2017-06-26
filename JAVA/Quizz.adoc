@@ -214,13 +214,44 @@ Il s'agit de réimplémenter une méthode qu'on hérite d'une classe mère ou qu
 -----------------
   
   *  Can super class reference variable can hold an object of sub class?
+-----------------
+Oui C'est possible
+-----------------
+
   *  Is multiple inheritance allowed in Java?
+-----------------
+Non, par contre c'est possible d'étendre une classe et implémenter plusieurs interfaces
+-----------------
+
   *  What is an interface?
+-----------------
+Une interface est une classe totalement abstraite. Elle définit un comportement à la classe qui l'implémente..
+-----------------
+
   *  How do you define an interface?
+-----------------
+public interface Somethingable{
+}
+-----------------
+
   *  How do you implement an interface?
+-----------------
+public class someClass implements Somethingable{
+}
+-----------------
+
   *  Can you explain a few tricky things about interfaces?
+-----------------
+....
+-----------------
   *  Can you extend an interface?
+-----------------
+oui.
+-----------------
   *  Can a class extend multiple interfaces?
+-----------------
+oui
+-----------------
   *  What is an abstract class?
   *  When do you use an abstract class?
   *  How do you define an abstract method?
