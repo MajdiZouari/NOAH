@@ -253,7 +253,19 @@ oui.
 oui
 -----------------
   *  What is an abstract class?
+-----------------
+Une classe abstraite est une classe qu'on ne peut pas instancier.
+Elle peut contenir une ou plusieurs méthode abstaites ( qui n'ont pas de corps)
+-----------------
+  
   *  When do you use an abstract class?
+-----------------
+Elle est généralement utilisée quand on veut INTERDIRE l'instanciation de la classe mère.
+Par exemple, la classe Camion et Voiture hérite de la classe Vehicule qui décrit un ensemble 
+de caractéristiques communs aux deux classes filles. Sauf qu'on n'a pas besoin d'instancier
+la classe Vehicule dans notre système. Car ça n'a pas de sens!
+-----------------
+  
   *  How do you define an abstract method?
   *  Compare abstract class vs interface?
   *  What is a constructor?
