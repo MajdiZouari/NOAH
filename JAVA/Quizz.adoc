@@ -267,13 +267,37 @@ la classe Vehicule dans notre système. Car ça n'a pas de sens!
 -----------------
   
   *  How do you define an abstract method?
+-----------------
+ public abstract class Blabla{
+ }
+-----------------  
   *  Compare abstract class vs interface?
+-----------------
+Une interface est une coquille vide qui définit un contrat.
+Elle ne comporte que des signatures de méthode sans corps.
+Une classe abstraite peut définir un comportement en ayant certaines méthodes nonAbstraitres.
+-----------------
   *  What is a constructor?
+-----------------
+Une méthode permettant d'instancier l'objet à partir de sa classe.
+-----------------
+  
   *  What is a default constructor?
-  *  Will this code compile?
+-----------------
+C'est un constructeur sans arguments généré par défaut. Il se contente
+de créer l'objet et d'initialiser les attributs telqu'ils sont décrits
+dans la classe.
+-----------------
+  
   *  How do you call a super class constructor from a constructor?
-  *  Will this code compile?
+-----------------
+super();
+-----------------
+
   *  What is the use of this()?
+-----------------
+Renvoie l'instance en cours de l'objet.
+-----------------
   *  Can a constructor be called directly from a method?
   *  Is a super class constructor called even when there is no explicit call from a sub class constructor?
  
