@@ -319,7 +319,26 @@ qu'une superClass variable pointe sur une subclasse reference.
 C'est un opérateur qui permet de vérifier si un objet est un subtype d'un Type donné.
 -----------------
   *  What is coupling?
+-----------------
+C'est le degré d'interdépendance entre les modules. Un couplage fort/serré quand deux modules 
+échangent beaucoup de données. 
+Un couplage fort génère l'antipattern plat de spaghetti :
+On ne peut pas déterminer le qui, le quoi et le comment d’une modification de données.
+Un couplage fort implique nécessairement une faible indépendance fonctionnelle :
+Le composant logiciel est difficilement réutilisable,
+Le composant logiciel est difficilement testable.
+Si deux tâches accèdent, par couplage fort, à une ressource commune 
+(ressource critique) et qu'elles s'exécutent en exclusion mutuelle, alors si
+une des tâches reste bloquée en section critique elle bloque automatiquement l'autre :
+Risque d'interblocage
+-----------------  
   *  What is cohesion?
+-----------------
+C'est le degré d'accord des éléments d'un module. 
+un module cohérent a ses éléments étroitement liés et effectuant un nombre réduit d'opérations.
+Des modules peu cohérents sont généralement difficiles à comprendre, à réutiliser et à maintenir, 
+et sont fragiles, puisqu'ils sont affectés par les modifications apportées aux autres modules.
+-----------------  
   *  What is encapsulation?
   *  What is an inner class?
   *  What is a static inner class?
