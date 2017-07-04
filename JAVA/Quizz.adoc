@@ -299,12 +299,25 @@ super();
 Renvoie l'instance en cours de l'objet.
 -----------------
   *  Can a constructor be called directly from a method?
+-----------------
+Non, sauf si on le précède par un "new"; on crée une nouvelle instance
+-----------------  
   *  Is a super class constructor called even when there is no explicit call from a sub class constructor?
- 
+-----------------
+Le compilateur appellera le constructeur par défaut accessible de la superclasse.
+-----------------  
 == Advanced object oriented concepts
 
   *  What is polymorphism?
+-----------------
+C'est le fait qu'un objet puisse définir son propre comportement et en même temps partager 
+ceux de sa classe mère. Dans Java le polymorphisme se traduit principalement par le fait
+qu'une superClass variable pointe sur une subclasse reference. 
+-----------------    
   *  What is the use of instanceof operator in Java?
+-----------------
+C'est un opérateur qui permet de vérifier si un objet est un subtype d'un Type donné.
+-----------------
   *  What is coupling?
   *  What is cohesion?
   *  What is encapsulation?
