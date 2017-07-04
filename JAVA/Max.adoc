@@ -1,0 +1,16 @@
+ * "Connaissez-vous les principes SOLID ? si oui, pouvez-vous me citer les définitions ?"
+
+ * "Connaissez vous l'immutabilité ? si oui, à quoi ça sert ?"
+
+ * Dans la pratique du TDD, comment procédez-vous ?
+ 
+ * "Qu'avez vous compris du DDD ?"
+ 
+ * "Connaissez vous des algo ?"
+ 
+ * "Faites-vous de la veille technique ? Sur quel sujet ?"
+
+ * "Quelles sont les nouveautés de JAVA 8 ?"
+
+ * "Comment implémentez-vous l'immutabilité ?"
+ 
