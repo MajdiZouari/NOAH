@@ -338,12 +338,32 @@ C'est le degré d'accord des éléments d'un module.
 un module cohérent a ses éléments étroitement liés et effectuant un nombre réduit d'opérations.
 Des modules peu cohérents sont généralement difficiles à comprendre, à réutiliser et à maintenir, 
 et sont fragiles, puisqu'ils sont affectés par les modifications apportées aux autres modules.
+C'est, en gros, le degré avec lequel les tâches réalisées par un seul module sont 
+fonctionnellement reliées.
 -----------------  
   *  What is encapsulation?
+-----------------
+C'est le fait d'interdire l'accès à certaines données pour d'autres instances.
+i.e l'utilisation de différents accesseurs..
+-----------------  
+
   *  What is an inner class?
+-----------------
+C'est une classe définie dans une autre.
+-----------------  
+  
   *  What is a static inner class?
+-----------------
+C'est une classe statique définie dans une autre.
+-----------------   
   *  Can you create an inner class inside a method?
+-----------------
+oui . https://blog.xebia.fr/2012/11/08/back-to-basics-bien-maitriser-les-classes-internes-en-java/
+-----------------   
   *  What is an anonymous class?
+-----------------
+C'est une inner Class qui n'a pas de nom !
+-----------------    
    
 == Modifiers
 
