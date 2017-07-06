@@ -368,9 +368,27 @@ C'est une inner Class qui n'a pas de nom !
 == Modifiers
 
   *  What is default class modifier?
+-----------------
+Quand ne met rien devant le nom de la classe, elle est visible dans le package dans lequel elle a été
+créée. ie class MyClass {}.  Les modifiers possibles pour une classe sont : public , abstract &  final
+-----------------    
+  
   *  What is private access modifier?
+-----------------    
+Ca conserne plutot les attributs et les méthodes. ça les rend visible que par la classe dans laquelle
+ils ont été déclarés.
+-----------------    
+  
   *  What is default or package access modifier?
+-----------------    
+default & package permettent l'accès à toutes les classes du package d'accéder à l'attribut/méthode.
+-----------------    
+  
   *  What is protected access modifier?
+-----------------    
+rend accessible toute méthode/attribut du même package ou au subclasses
+-----------------    
+  
   *  What is public access modifier?
   *  What access types of variables can be accessed from a class in same package?
   *  What access types of variables can be accessed from a class in different package?
