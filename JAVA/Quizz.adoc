@@ -390,31 +390,75 @@ rend accessible toute méthode/attribut du même package ou au subclasses
 -----------------    
   
   *  What is public access modifier?
+-----------------    
+rend accessible toute méthode/attribut partout
+-----------------    
+
   *  What access types of variables can be accessed from a class in same package?
+-----------------    
+public (evidemment)
+package
+protected
+default
+-----------------    
+
   *  What access types of variables can be accessed from a class in different package?
+-----------------    
+public
+protected si la classe en question est un subclasse
+-----------------    
+
   *  What access types of variables can be accessed from a sub class in same package?
+-----------------    
+protected
+default
+package
+public
+-----------------    
+
   *  What access types of variables can be accessed from a sub class in different package?
+-----------------    
+protrected
+public
+-----------------    
+
   *  What is the use of a final modifier on a class?
+-----------------    
+rend la valeur de la variable inmodifiable en runtime
+-----------------    
+
   *  What is the use of a final modifier on a method?
+-----------------    
+rend la méthode unoverridable par une subclass
+-----------------    
+
   *  What is a final variable?
+-----------------    
+rend la valeur de la variable inmodifiable en runtime
+-----------------    
+
   *  What is a final argument?
+-----------------    
+rend la valeur de la variable inmodifiable en runtime
+-----------------    
+
   *  What happens when a variable is marked as volatile?
+-----------------    
+Une variable volatile sera mise dans le "main memory" et pas dans le cache du CPU.
+ca sert a eviter des problemes d'incoherence de données en cas de mise intensif d'une donnée
+-----------------    
+
   *  What is a static variable?
+-----------------    
+Une variable statique ne dépend pas des instances.
+-----------------     
   
 == conditions & loops
  
   *  Why should you always use blocks around if statement?
-  *  Guess the output
-  *  Guess the output
-  *  Guess the output of this switch block . 
-  *  Guess the output of this switch block?
   *  Should default be the last case in a switch statement?
   *  Can a switch statement be used around a String
-  *  Guess the output of this for loop
   *  What is an enhanced for loop?
-  *  What is the output of the for loop below?
-  *  What is the output of the program below?
-  *  What is the output of the program below?
   
 == Exception handling
 
