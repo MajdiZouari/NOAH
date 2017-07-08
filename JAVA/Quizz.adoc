@@ -456,9 +456,27 @@ Une variable statique ne dépend pas des instances.
 == conditions & loops
  
   *  Why should you always use blocks around if statement?
+-----------------    
+Ceci émane du "code style". car si on voudrait ajouter une instruction dans la clause if,
+elle ne sera pas prise en compte.
+-----------------     
+
   *  Should default be the last case in a switch statement?
+-----------------    
+Pareil, c'est beaucoup plus lisible de laisser default à la fin
+-----------------     
+
   *  Can a switch statement be used around a String
+-----------------    
+Oui, depuis l'introduction des litterals en Java 7, on peut utiliser switch sur un string
+-----------------     
+
   *  What is an enhanced for loop?
+-----------------    
+for (ElementType element : elementCollection){
+	
+}
+-----------------     
   
 == Exception handling
 
