@@ -481,14 +481,30 @@ for (ElementType element : elementCollection){
 == Exception handling
 
   *  Why is exception handling important?
+-----------------    
+1- Faire la difference entre le code régulier et la gestion des erreurs
+2- Propager les erreurs sur la call stack 
+3- Grouper et différencier les erreurs
+-----------------    
   *  What design pattern is used to implement exception handling features in most languages?
+-----------------    
+try{}catch(){}finally(){}
+-----------------      
   *  What is the need for finally block?
+-----------------    
+Le besoin pricipal est de permettre au programme de revenir à un état stable suite
+au déclenchement d'une exception. Par exemple : la fermeture d'une connexion à une
+base de données, une ouverture d'un fichier.. etc
+-----------------      
   *  In what scenarios is code in finally not executed?
-  *  Will finally be executed in the program below?
-  *  Is try without a catch is allowed?
-  *  Is try without catch and finally allowed?
-  *  Can you explain the hierarchy of exception handling classes?
-  *  What is the difference between error and exception?
+-----------------    
+Toujours
+-----------------        
+ *  Is try without a catch is allowed?
+ 
+ *  Is try without catch and finally allowed?
+ *  Can you explain the hierarchy of exception handling classes?
+ *  What is the difference between error and exception?
  *  What is the difference between checked exceptions and unchecked exceptions?
  *  How do you throw an exception from a method?
  *  What happens when you throw a checked exception from a method?
