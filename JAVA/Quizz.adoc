@@ -518,6 +518,9 @@ Toujours
 == Miscellaneous topics
 
  *  What are the default values in an array?
+-----------------    
+ 0 pour les numériques, '' pour char et null pour les reference types..
+-----------------    
  *  How do you loop around an array using enhanced for loop?
  *  How do you print the content of an array?
  *  How do you compare two arrays?
