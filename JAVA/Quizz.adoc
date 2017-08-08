@@ -501,11 +501,37 @@ base de données, une ouverture d'un fichier.. etc
 Toujours
 -----------------        
  *  Is try without a catch is allowed?
- 
+-----------------    
+Dans le cas où on veut pas catcher l'exception thrown par contre on souahite nettoyer correctement les resources
+par exemple :
+public void yourMethod() throws YourException {
+    try {
+        db.store(mydata);
+    } finally {
+        db.cleanup();
+    }
+}
+-----------------  
  *  Is try without catch and finally allowed?
+-----------------  
+oui, voir la question précédente.
+-----------------  
  *  Can you explain the hierarchy of exception handling classes?
+-----------------  
+Tout hérite de Throwable, Error et Exception. Ensuite de Exception on a les RuntimeException (NullPointerException, etc..)
+et les autres...
+----------------- 
  *  What is the difference between error and exception?
+-----------------
+Une erreur est une Throwable de laquelle le programme ne peut pas se remettre : OutOfMemoryError.. fileMissingError..
+-----------------
  *  What is the difference between checked exceptions and unchecked exceptions?
+-----------------
+Les unchecked sont les exceptions qu'un programme n'est pas sencé traiter, ou "recover from"
+On ne peut pas se remettre d'un divide by zero, le cas n'est pas sensé se produire à la base !
+Les checked sont les exceptions auquelles on attend un catch à la compilation. 
+il faut les traiter et s'attendre à ce qu'elles surgissent
+-----------------
  *  How do you throw an exception from a method?
  *  What happens when you throw a checked exception from a method?
  *  What are the options you have to eliminate compilation errors when handling checked exceptions?
