@@ -589,10 +589,28 @@ try(j'ouvre ma ressource){
  0 pour les numériques, '' pour char et null pour les reference types..
 -----------------    
  *  How do you loop around an array using enhanced for loop?
+-----------------    
+for (ItemType item : itemCollection)
+-----------------    
  *  How do you print the content of an array?
- *  How do you compare two arrays?
+-----------------    
+Java 7 : on boucle et on print
+Java 8 : on transforme en stream .. et on print en lambda
+list.stream().forEach(e -> System.out.println(e));
+-----------------    
+  *  How do you compare two arrays?
+----------------- 
+ Arrays.equals(arr1, arr2)), Arrays.deepEquals(arr1, arr2))
+----------------- 
  *  What is an enum?
+----------------- 
+Une liste de valeurs possibles
+----------------- 
  *  Can you use a switch statement around an enum?
+----------------- 
+biensur
+----------------- 
+ 
  *  What are variable arguments or varargs?
  *  What are asserts used for?
  *  When should asserts be used?
