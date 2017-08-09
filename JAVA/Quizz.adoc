@@ -533,14 +533,55 @@ Les checked sont les exceptions auquelles on attend un catch à la compilation.
 il faut les traiter et s'attendre à ce qu'elles surgissent
 -----------------
  *  How do you throw an exception from a method?
+-----------------
+exemple : public void myMethod() throws IOException{}
+-----------------
  *  What happens when you throw a checked exception from a method?
+-----------------
+Le try catch sera délégué à l'appelant de la méthode.
+-----------------
  *  What are the options you have to eliminate compilation errors when handling checked exceptions?
+-----------------
+try catch ou throws 
+----------------- 
  *  How do you create a custom exception?
+-----------------
+On hérite de Exception 
+----------------- 
  *  How do you handle multiple exception types with same exception handling block?
+-----------------
+catch (IOException|SQLException ex) {
+    logger.log(ex);
+    throw ex;
+}
+----------------- 
  *  Can you explain about try with resources?
+-----------------
+On hérite de Exception 
+----------------- 
  *  How does try with resources work?
+-----------------
+D'abord, la ressource doit être Closeable. 
+try(j'ouvre ma ressource){
+} // la ressource se ferme automatiquement à la fin du traitement
+-----------------  
  *  Can you explain a few exception handling best practices?
-  
+-----------------
+- Ne jamais avaler une exception dans le catch block
+- Ne jamais throw Exception, favoriser une exception spécifique
+- Ne jamais catcher Exception ou Throwable, favoriser une exception spécifique
+- Encapsuler correctement en passant l'exception telle quelle tans la custom
+- On log ou on throw, pas les deux
+- Ne jamais throw une exception du Finally block
+- Catcher que les checked ( et ce qu'on peut vraiment traiter)
+- Ne pas utiliser printStackTrace()
+- Favoriser finally si on n'a pas de traitement d'exception
+- "Throw Early, Catch Late"
+- Clean ressource apres une exception handeling
+- Ne pas utiliser les exceptions dans le flow control & application Logic
+- Valider l'input très tôt pour minimiser l'exception handeling
+- Log dans un seul message / une seule ligne
+-----------------  
 == Miscellaneous topics
 
  *  What are the default values in an array?
