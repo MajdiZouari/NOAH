@@ -612,10 +612,40 @@ biensur
 ----------------- 
  
  *  What are variable arguments or varargs?
+----------------- 
+public static void hello (int ... a)
+----------------- 
  *  What are asserts used for?
+----------------- 
+....
+-----------------  
  *  When should asserts be used?
+----------------- 
+...
+----------------- 
  *  What is garbage collection?
+----------------- 
+Le fait que la JVM se débarrasser des objets qui ne sont plus utilisés.
+-----------------
  *  Can you explain garbage collection with an example?
+----------------- 
+"Fonctionnement de la JVM Hotspot:
+Les objets naissent, vivent et meurent dans une zone mémoire de la JVM: le tas (heap).
+Celle-ci est constituée de 3 zones:
+- Young space: composée elle-même de l'Eden + 2 Survivors + de l'espace virtuel. Cet zone accueille les nouveaux objets.
+- Tenured Space: composé d'objets. Cette zone contient les objets à longue durée de vie.
+- Perm : archivage du code des classes chargées pour l'exécution du programme.
+La gestion du cycle de vie des objets se compose de deux étapes: la vie dans le young Space et la vie dans le Tenured Space.
+La vie dans le Young Space:
+-> nouvelle instance créée placée dans la partie Eden
+-> placée ensuite dans le Survivor 1
+-> quand le taux d'occupation du Young Space augmente beaucoup, exécution d'une Minor Collection: algorithme effectuant le parcours et la copie des objets ""vivants"" de l'Eden et du Survivor 1 vers le Survivor 2.
+-> lorsque le Survivor libre ne contient plus suffisamment de place ou lorsqu'un objet atteint un age suffisant déterminé dynamiquement par la JVM, copie des objets du survivors vers le Tenured Space.
+La vie dans le Tenured Space:
+- Libération et compactage de la mémoire grâce à l'algorithme de Mark-Sweep-Compact: 
+- 1er parcours de la heap pour marquer les objets candidats à la suppression (marquage - Mark)
+- 2ème parcours du heap pour supprimer les objets e libérer la mémoire (Sweep), et pour la compacter (Compact)"
+----------------- 
  *  When is garbage collection run?
  *  What are best practices on garbage collection?
  *  What are initialization blocks?
