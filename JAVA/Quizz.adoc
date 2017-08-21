@@ -647,6 +647,11 @@ La vie dans le Tenured Space:
 - 2ème parcours du heap pour supprimer les objets e libérer la mémoire (Sweep), et pour la compacter (Compact)"
 ----------------- 
  *  When is garbage collection run?
+----------------- 
+Tout dépend de la stratégie. Dans une Stratégie générationelle, la collection se lance quand une allocation dans une genréation-0 (young) échoue.
+Quand y'a plus d'espace dans une gen-0, on lance une collection. 
+----------------- 
+ 
  *  What are best practices on garbage collection?
  *  What are initialization blocks?
  *  What is a static initializer?
