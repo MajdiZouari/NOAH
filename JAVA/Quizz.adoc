@@ -653,9 +653,35 @@ Quand y'a plus d'espace dans une gen-0, on lance une collection.
 ----------------- 
  
  *  What are best practices on garbage collection?
+----------------- 
+La garbage collection est dans certain contexte super couteuse (mobile, embedded..)
+il est du recommandé de :
+- Réutiliser les objets deja créés et eviter de les recréer
+- éviter les object wrappers quand on peut utiliser les primitifs
+- setter les objets à null explicitement si on veut s'en débarrasser
+-----------------  
  *  What are initialization blocks?
+-----------------  
+On peut initialiser les attributs à la déclaration dans la classe. Sauf qu'il s'agit
+d'un traitement plus complexe ( boucle for) on aura besoin d'un block d'initialisation
+dans lequel on traite et on initialise les attirbuts. ( constructeur, static..)
+ref: https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
+-----------------  
+ 
  *  What is a static initializer?
+-----------------  
+Ce dernier sert à initialiser les membres static de la classe.
+du code peut être directement balancé dans static{}
+ref: https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
+-----------------  
+ 
  *  What is an instance initializer block?
+-----------------  
+une alternative au constructeur, on balance l'initialisation directement
+entre accolade {} ou on appelle un méthode final
+ref: https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
+-----------------  
+ 
  *  What is tokenizing?
  *  Can you give an example of tokenizing?
  *  What is serialization?
