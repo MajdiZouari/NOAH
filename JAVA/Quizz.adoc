@@ -779,15 +779,78 @@ ref: https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
  *  Can you write a synchronized program with wait and notify methods?
   
 == Functional Programming - Lamdba expressions and Streams
+
  *  What is functional programming?
+-----------------
+C'est un paradigme de programmation de type déclaratif ( et non impératif) qui se repose sur la composition de fonction 
+et n'admet ni la mutation des données ni le changement d'état et les effets de bords.
+Il se manifeste dans java par les Streams & Lambda.
+-----------------
+
  *  Can you give an example of functional programming?
+-----------------  
+addition : 
+f -> let plus a b = a + b; 
+----------------- 
+
  *  What is a stream?
+-----------------
+Il s'agit d'un flot de données construit à partir d'une source ( collection, tableau, I/O) et possède les proprietés suivantes:
+- ne stocke pas de données, se contente de les transférer d'une source vers une suite d'opérations
+- ne modifie pas les données de la source sur laquelle il est construit, il construit un nouveau si besoin ( //) 
+- Charge les données en lazy (optimise les perf)
+- N'est pas borné
+- un stream n'est pas réutilisable, une fois parcouru il faut reconstruire un autre s'il le faut.
+-----------------
+ 
  *  Explain about streams with an example?
- *  what are intermediate operations in streams?
+-----------------
+ List<String> strings = Arrays.asList("girafe", "chameau", "chat", "poisson", "cachalot");
+       strings.stream()
+               .filter(x -> x.contains("cha"))
+               .map(x -> x.substring(0, 1).toUpperCase() + x.substring(1))
+               .sorted()
+               .forEach( System.out::println );
+-----------------
+
+ *  What are intermediate operations in streams?
+-----------------
+Les opérations intermédiaires (Stream.map ou Stream.filter par exemple) sont effectuées
+de façon lazy et renvoient un nouveau stream, ce qui crée une succession de streams 
+que l’on appelle stream pipelines.
+-----------------
+
  *  What are terminal operations in streams?
+-----------------
+Une fois l’opération terminale est faite, tous les streams seront dit consommés, ils seront détruits et ne pourront plus être utilisés.
+-----------------
+
+
  *  What are method references?
+-----------------
+C'est un raccourci d'une expression lambda executant UNE seule méthode.
+Consumer<String> c = System.out::println;
+-----------------
+
  *  What are lambda expressions?
+-----------------
+  Les expressions lambda sont aussi nommées closures ou fonctions anonymes : leur but principal est de permettre de passer en paramètre un ensemble de traitements.
+  Elle permet de passer une fonction en paramètre d'une méthode. 
+-----------------
+
+
  *  Can you give an example of lambda expression?
+-----------------
+roster
+    .stream()
+    .filter(
+        p -> p.getGender() == Person.Sex.MALE
+            && p.getAge() >= 18
+            && p.getAge() <= 25)
+    .map(p -> p.getEmailAddress())
+    .forEach(email -> System.out.println(email));
+-----------------
+
  *  Can you explain the relationship between lambda expression and functional interfaces?
  *  What is a predicate?
  *  What is the functional interface - function?
