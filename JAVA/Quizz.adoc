@@ -836,6 +836,9 @@ Consumer<String> c = System.out::println;
 -----------------
   Les expressions lambda sont aussi nommées closures ou fonctions anonymes : leur but principal est de permettre de passer en paramètre un ensemble de traitements.
   Elle permet de passer une fonction en paramètre d'une méthode. 
+  il s'agit surtout d'un unnamed block de code ( unnamed function) avec une liste de parametres et un body.
+  concise, anonyme, fonctionelle et passée d'une fonction à une autre.
+  Une lambda n'a pas de nom, n'a pas de type de retour, ne retourne pas d'exception et de type parameters.
 -----------------
 
 
@@ -853,8 +856,24 @@ roster
 
  *  Can you explain the relationship between lambda expression and functional interfaces?
  *  What is a predicate?
+ 
  *  What is the functional interface - function?
+-----------------
+C'est une interface qui n'a qu'une seule abstract method.
+il existe 4 catégories :
+Supplier
+Consumer
+Predicate
+Function 
+-----------------
+
  *  What is a consumer?
+-----------------
+il s'agit dune interface fonctionelle dont la méthode prend un objet et ne retourne rien
+exemple :
+Consumer<T> c = p -> System.out.println(p); 
+----------------- 
+
  *  Can you give examples of functional interfaces with multiple arguments?
   
 == New Features
