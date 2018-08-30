@@ -50,6 +50,9 @@ Il faut l'ouvrir uniquement si besoin et la fermer tout de suite après.
 -----------------
 -hibernate caches query data to make our application faster 
 -Hibernate first level cache is associated with the Session object.
+-Hibernate first level cache is session specific : 
+that’s why when we are getting the same data in same session
+ there is no query fired whereas in other session query is fired to load the data.
 -Hibernate first level cache is enabled by default and there is no way to disable it.
 However hibernate provides methods through which we can delete selected objects
 from the cache or clear the cache completely.
