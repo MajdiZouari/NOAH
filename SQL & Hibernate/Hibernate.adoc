@@ -1,0 +1,40 @@
+
+* What is Hibernate Framework ? 
+-----------------
+c'est un framework ORM qui permet de mapper un "domain model objects" à des tables entités relation. 
+Hibernate est un ORM java
+-----------------
+
+* What is Java Persistence API (JPA)?
+-----------------
+c'est une specification JSR de la gestion des données relationelles.
+-----------------
+
+* What are the important benefits of using Hibernate Framework?
+-----------------
+- La gestion des ressources JDBC
+- La configuration peut se faire en XML ou en annotation ce qui rend le code indépendant de la conf
+- Large communauté
+- Facilement integrable en JEE
+- Offre le lazy initialization via proxy objects
+- Offre le cache pour de meilleures perf
+- Permet aussi d'executer du SQL natif
+-----------------
+
+* Name some important interfaces of Hibernate framework?
+-----------------
+- SessionFactory : immutable, thread-safe. On l'initialise une seule fois. Puis on utilise le cache
+pour la réutiliser. utilisée pour récupérer les sessions des operations sur la bd.
+
+- Session : single-threaded, short-lived object. représente une conversation entre l'application et la bd.
+Elle wrappe java.sql.Connection et une factory pour org.hibernate.Transaction.
+Il faut l'ouvrir uniquement si besoin et la fermer tout de suite après.
+
+- Transaction : single-threaded, short-lived object. Utilisé pour exécuter une tâche atomique.
+-----------------
+
+ 
+
+source :
+
+https://www.journaldev.com/3633/hibernate-interview-questions-and-answers
