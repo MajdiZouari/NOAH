@@ -26,13 +26,41 @@ c'est une specification JSR de la gestion des données relationelles.
 - SessionFactory : immutable, thread-safe. On l'initialise une seule fois. Puis on utilise le cache
 pour la réutiliser. utilisée pour récupérer les sessions des operations sur la bd.
 
-- Session : single-threaded, short-lived object. représente une conversation entre l'application et la bd.
+- Session : single-threaded, short-lived NOT THREAD SAFE object. représente une conversation entre l'application et la bd.
 Elle wrappe java.sql.Connection et une factory pour org.hibernate.Transaction.
 Il faut l'ouvrir uniquement si besoin et la fermer tout de suite après.
 
 - Transaction : single-threaded, short-lived object. Utilisé pour exécuter une tâche atomique.
 -----------------
 
+
+* Name some important annotations used for Hibernate mapping?
+-----------------
+- @Entity
+- @Table : used with Entity to define which table
+- @Access: define access type ?
+- @Id 
+- @EmbeddedId : to define composite primary Key in the entity bean
+- @OneToOne, @OneToMany, @ManyToOne, @ManyToMany
+- @Cascade : to define cascadeType between two entities
+- @PrimaryKeyJoinColumn :   ?
+-----------------
+
+* What is hibernate caching? Explain Hibernate first level cache?
+-----------------
+-hibernate caches query data to make our application faster 
+-Hibernate first level cache is associated with the Session object.
+-Hibernate first level cache is enabled by default and there is no way to disable it.
+However hibernate provides methods through which we can delete selected objects
+from the cache or clear the cache completely.
+Any object cached in a session will not be visible to other sessions and when the session is closed,
+all the cached objects will also be lost.
+-----------------
+
+* How to configure Hibernate Second Level Cache using EHCache?
+-----------------
+
+-----------------
  
 
 source :
