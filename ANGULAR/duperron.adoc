@@ -1,0 +1,26 @@
+
+
+
+* Quelle est la différence entre un Component et une Directive
+
+* Comment est faite l'injection de dépendance dans Angular ? 
+
+* Quel est l'apport de TypeScript par rapport à javascript? 
+
+* Comment définir le router d'une application Angular ? 
+
+* Qu'est ce qu'un pipe ? Donnez un exemple d'usage
+
+* Comment écrire un test Angular ? 
+
+* Qu'est ce qu'un Observable ?
+
+* Comment on peut faire trois requêtes simultanées en Angular ? 
+
+* Comment on peut faire trois requêtes séquentielles en Angular ? 
+
+
+
+
+
+
