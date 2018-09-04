@@ -1,6 +1,4 @@
 
-
-
 * Quelle est la différence entre un Component et une Directive
 
 * Comment est faite l'injection de dépendance dans Angular ? 
@@ -14,6 +12,8 @@
 * Comment écrire un test Angular ? 
 
 * Qu'est ce qu'un Observable ?
+
+* Comment on peut faire communiquer des données entre deux composents distants ? 
 
 * Comment on peut faire trois requêtes simultanées en Angular ? 
 
