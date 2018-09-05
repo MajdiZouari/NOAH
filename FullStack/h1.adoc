@@ -92,43 +92,58 @@ puis : mvn tomcat7:deploy
 * Connais-tu Webpack ? A quoi ça sert ? Cite quelques exemples d’usages.
 
 -----------------
-
+Webpack est un outils de déboggage angular front
+il permet, sur un navigateur, de consulter les source, mettre des point d'arrêt etc
 ----------------- 
 
 * Sais-tu comment faire des optimisations côté Front ? Concaténation….
 
 -----------------
-
+Non, par contre, le ng-build le fait.
 ----------------- 
 
 * As-tu déjà utilisé Git ? Pourquoi ? Comment ? Bonnes pratiques ?
 
 -----------------
-
+Git est Gestionnaire de version puissant.
+Les bonne pratiques  :
+- travailler en features branches
+- toujours rebase avant push
+- Jamais forcer un push
 ----------------- 
 
 * Angular CLI ? Connaissance ? Utilisation ?
 
 -----------------
-
+- Permet de bootstrapper une application angular rapidement.
+Il suffit de ng new myApp pour créer une app
+enuite npm install pour les dépendance
+npm start pour compiler les sources et démarrer le serveur
 ----------------- 
 
 * Connais-tu GitFlow ? A quoi ça sert ?
 
 -----------------
-
+Git flow c'est travailler en feature branch.
+on tire une branche, on développer la feature 
+Une fois on a finit, on fait un merge request
+un collègue fait une revue de code puis merge sur la branche principale (dev)
 ----------------- 
 
 * A quoi sert le Rebase sur Git ?
 
 -----------------
-
+Garder l'historique des features dans le bon ordre
 ----------------- 
 
 * RxJS ? Connaissance ? A quoi ça sert ?
 
 -----------------
-
+rxJs : reactive programming front
+rxJs introduit le pattern des Observables en front.
+Un observable c'est un pattern qui fusionne Observer et iterator.
+permet de souscrire un observable. Une fois modifié, le souscripteur est notifié,
+il peut enchainer à ce moment ces traitement, voire utiliser les données modifiées.
 ----------------- 
 
 * RxJava ? Connaissance ? A quoi ça sert ?
