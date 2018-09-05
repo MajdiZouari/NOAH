@@ -1,0 +1,243 @@
+* Différence entre Guice et Spring
+
+-----------------
+- Guice est la plateforme d'injection de dépendance de Google.
+- Guice préfère l'injection par constructeur à l'injection par setter.
+Ceci permet d'avoir une meilleure immutabilité d'une classe.
+----------------- 
+
+* Connaissance d’Eureka et Zuul ?
+
+-----------------
+Eureka : Netflix Load-Balancing and FailOver (circuitBreaker) pour des micro-services.
+Utiles pour un environement AWS où les serveurs bougent tout le temps sans IP fixes.
+source : https://github.com/Netflix/eureka/wiki/Eureka-at-a-glance
+
+Zuul : Netflix api Management Solution. 
+Permet dynamic routing, monitoring, resiliency, security,..
+----------------- 
+
+* Connaissance d’une solution d’API Management ? A quoi sert une solution d’API Management?
+
+-----------------
+Zuul.
+Elle sert à dynamic routing, monitoring, resiliency, security.
+Sert à gérer d'une façon unique et centralisée les problématiques communes aux microservices.
+----------------- 
+
+* Connaissance d’Oauth2 ? Comment ça marche ? A quoi ça sert ?
+
+-----------------
+OAuth2 est un protocle d'authentification.
+Il sert à attribuer une "Authorization" aux consommateurs d'un service.
+Le mécanisme se fait via un token. Le client s'authentifie sur un service qui lui
+génére  un token qui définie son ROLE. Le client détient ce token et le transporte
+dans le header d'une requete http. Un intercepteur niveau webservice API qui va récupérer
+le token, vérifie sa validité, l'identité et le role du client. Puis permet ou pas 
+la "consommation" du service.
+----------------- 
+
+* Swagger ? Comment ça marche ? A quoi ça sert ? Quels sont les principaux intérêts ?
+
+-----------------
+Swagger permet de documenter une API REST.
+Exposer un contrat d'interface qui servira à générer un client Rest.
+Ca marche par l'annoatation des signatures de service.
+----------------- 
+
+* Connaissance des Verbes REST ? Différence Put/Post ?
+
+-----------------
+Verbe REST : GET, POST, PUT, DELETE, PATCH
+Le post est idemPotent : çad il ne modifie l'état d'une ressource
+du coup il est utilisé à la création
+le PUT n'est pas idempotent, il modifie une ressource.
+----------------- 
+
+* Qu'est ce que le RESTFul ? Quelles sont les bonnes pratiques REST?
+
+-----------------
+-Les ressources sont identfiées par un URI unique
+-Les ressources sont manipulés par des vers HTTP: GET, POST, PUT, DELETE, PATCH
+-L'usage du "content-negociation" avec le header accept pour recup XML ou JSon par exemple
+-Maintenir l'état de l'objet dans sa représentation
+-Maintenir la relation entre objet explicitement dans leur représentation
+----------------- 
+
+* Codes Http ? Lesquels tu peux citer ? Différence entre classe 400/500
+
+-----------------
+les 2XX pour le succès (200 OK, 201 Created..)
+les 4XX pour les erreur client (404 not found, 403 forbidden,...)
+les 5XX pour les erreur Serveur ( 500 internal server error)
+----------------- 
+
+* Sais-tu déployer un War ou un Jar ? Allez plus loin que le Nexus…
+
+-----------------
+- Déploiement via docker : 
+d'abord écrire un docker file :
+From tomcat:8-jre8
+ADD dockerwar.war /usr/local/tomcat/webapps/
+Ensuite construire une image :
+docker build -t webserver .
+enfin la démarrer :
+docker run -it --rm -p 8080:8080 --name dockerwar webserver
+
+- Déploiement via maven :
+écrire la conf dans pom.xml 
+puis : mvn tomcat7:deploy 
+----------------- 
+
+* Connais-tu Webpack ? A quoi ça sert ? Cite quelques exemples d’usages.
+
+-----------------
+
+----------------- 
+
+* Sais-tu comment faire des optimisations côté Front ? Concaténation….
+
+-----------------
+
+----------------- 
+
+* As-tu déjà utilisé Git ? Pourquoi ? Comment ? Bonnes pratiques ?
+
+-----------------
+
+----------------- 
+
+* Angular CLI ? Connaissance ? Utilisation ?
+
+-----------------
+
+----------------- 
+
+* Connais-tu GitFlow ? A quoi ça sert ?
+
+-----------------
+
+----------------- 
+
+* A quoi sert le Rebase sur Git ?
+
+-----------------
+
+----------------- 
+
+* RxJS ? Connaissance ? A quoi ça sert ?
+
+-----------------
+
+----------------- 
+
+* RxJava ? Connaissance ? A quoi ça sert ?
+
+-----------------
+
+----------------- 
+
+* Nouveautés apportées par Java 8 ? Connaissance ? Utilisation ?
+
+-----------------
+
+----------------- 
+
+* Streams en Java 8 ? Connaissance ? A quoi ça sert ? Comment ça marche ?
+
+-----------------
+
+----------------- 
+
+* Microservices ? Connaissance ? A quoi ça sert ? Comment ça marche ?
+
+-----------------
+
+----------------- 
+
+* Tests ? Bonnes pratiques ? Quels outils ? Quelle couverture serait optimale selon toi?
+
+-----------------
+
+----------------- 
+
+* Tests d’intégration ? A quoi ça sert ? Comment ça marche ? Connais-tu un outil pour le faire ?
+
+-----------------
+
+----------------- 
+
+* TDD ? Connaissance ? Bonnes pratiques ? Comment ça marche?
+
+-----------------
+
+----------------- 
+
+* Connais-tu/As-tu déjà utilisé Typescript ?
+
+-----------------
+
+----------------- 
+
+* Connais-tu/As-tu déjà utilisé ES6 ?
+
+-----------------
+
+----------------- 
+
+* Connais-tu/As-tu déjà utilisé les composants sur AngularJS ?
+
+-----------------
+
+----------------- 
+
+* As-tu déjà fait du multithreading en AngularJS?
+
+-----------------
+
+----------------- 
+
+* Connais-tu le Double Binding sur Angular ?
+
+-----------------
+
+----------------- 
+
+* Imagine que tu as un problème de performance sur ton application web ? Comment tu t'y prend
+pour l'identifier/le résoudre ?
+
+-----------------
+
+----------------- 
+
+* Comment tu expliquerais une promesse en angular à un développeur plus junior que toi ?
+
+-----------------
+
+----------------- 
+
+* Quel est le ratio entre dév. et tests lorsque tu développes une feature ?
+
+-----------------
+
+----------------- 
+
+* Imaginons que tu as un budget illimité pour réaliser une application web ? Quelle stack tu
+mettrais en place ? Pourquoi ?..
+
+-----------------
+
+----------------- 
+
+* Où fais-tu ta veille techno ? Quelle sites ? Quelles technos ont retenu ton attention ?
+
+-----------------
+
+----------------- 
+
+* En combien de temps penses-tu pouvoir monter en compétences sur les technos qu’il te
+manque ?
+
+-----------------
+
+----------------- 
