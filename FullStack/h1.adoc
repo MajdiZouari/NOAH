@@ -23,6 +23,7 @@ Permet dynamic routing, monitoring, resiliency, security,..
 Zuul.
 Elle sert à dynamic routing, monitoring, resiliency, security.
 Sert à gérer d'une façon unique et centralisée les problématiques communes aux microservices.
+source : https://microservices.io/patterns/apigateway.html
 ----------------- 
 
 * Connaissance d’Oauth2 ? Comment ça marche ? A quoi ça sert ?
@@ -150,49 +151,75 @@ il peut enchainer à ce moment ces traitement, voire utiliser les données modif
 * RxJava ? Connaissance ? A quoi ça sert ?
 
 -----------------
-
+Pareil que rxJs. Il permet la gestion des event-based program d'une façon asynchrone
+en utilisant les séquences d'observables.
 ----------------- 
 
 * Nouveautés apportées par Java 8 ? Connaissance ? Utilisation ?
 
 -----------------
-
+-Stream
+-Lambda
+-method reference
 ----------------- 
 
 * Streams en Java 8 ? Connaissance ? A quoi ça sert ? Comment ça marche ?
 
 -----------------
-
+Permet de construire, à partir d'une source de données (collections, fichier) un 
+flot de données transférable sur un ensemble d'operation de transformation.
 ----------------- 
 
 * Microservices ? Connaissance ? A quoi ça sert ? Comment ça marche ?
 
 -----------------
+- Une architecture qui vise à découper en block fonctionnel indépendant qui exposent
+des webservices unitaires et mono-fonctionnel
 
+Ca sert à mieux scaler l'application : multiplier et loadbalancer les ressources
+les plus sollicitées d'une application
+- ça sert aussi à simplifier et dégrossir la complexité logicielle
+- simplifier l'évolution sans impact big bang
 ----------------- 
 
 * Tests ? Bonnes pratiques ? Quels outils ? Quelle couverture serait optimale selon toi?
 
 -----------------
+test unitaire : test unitairement une fonction sans tirer toutes ses dépendances
+test d'integration : test un module en s'integrant aves ses semblables
 
+Bonnne pratiques :
+- nomenclature des tests: approche fontionelle should_return_five
+- écrire en BDD : given when then
+
+Outils :
+- Junit, mockito
+-wiremock, spock...
+- sonar, EclEmma pour la couverture
+Couverture optimale : 100%
+car si on est dans un contexte CI/CD, le plus le code est couvert, le mieux qu'on se porte.
 ----------------- 
 
 * Tests d’intégration ? A quoi ça sert ? Comment ça marche ? Connais-tu un outil pour le faire ?
 
 -----------------
-
+Tester un module en s'integrant avec les composantes qui lui sont externes.
+ça sert à tester la compatibilité d'un module avec d'autres.
 ----------------- 
 
 * TDD ? Connaissance ? Bonnes pratiques ? Comment ça marche?
 
 -----------------
-
+- TDD : commencer par écrire des tests non passants, puis écrire du code jusqu'à les faire
+passer
 ----------------- 
 
 * Connais-tu/As-tu déjà utilisé Typescript ?
 
 -----------------
-
+Oui.
+C'est un langage fortement typé
+offre des structures comme : Enum, interface, class
 ----------------- 
 
 * Connais-tu/As-tu déjà utilisé ES6 ?
@@ -210,50 +237,58 @@ il peut enchainer à ce moment ces traitement, voire utiliser les données modif
 * As-tu déjà fait du multithreading en AngularJS?
 
 -----------------
-
+nope
 ----------------- 
 
 * Connais-tu le Double Binding sur Angular ?
 
 -----------------
-
+There’s one directive in Angular >= 2.x that implements two-way data binding: ngModel. 
 ----------------- 
 
 * Imagine que tu as un problème de performance sur ton application web ? Comment tu t'y prend
 pour l'identifier/le résoudre ?
 
 -----------------
-
+- consulter la vue network du déboggueur du navigateur
+- vérifier si les lenteurs viennent des WS de l'api ou front ? 
+- si front, vérifier les ressources qui ont mis du temps à se charger puis essayer
+de les optimiser soit en lazyloading, soit en compression..
 ----------------- 
 
 * Comment tu expliquerais une promesse en angular à un développeur plus junior que toi ?
 
 -----------------
-
+?
 ----------------- 
 
 * Quel est le ratio entre dév. et tests lorsque tu développes une feature ?
 
 -----------------
-
+50% ? 
 ----------------- 
 
 * Imaginons que tu as un budget illimité pour réaliser une application web ? Quelle stack tu
 mettrais en place ? Pourquoi ?..
 
 -----------------
-
+Je mettrais angular en front car sont architecture est bien modulaire. 
+Il se base sur les pattern d'injection de dépendance.
+coté back, microservices avec api gateway
 ----------------- 
 
 * Où fais-tu ta veille techno ? Quelle sites ? Quelles technos ont retenu ton attention ?
 
 -----------------
-
+les sites de la veille techno :
+- les castcodeurs, devoxx (youtube), infoQ...
+sinon meetups .. 
 ----------------- 
 
 * En combien de temps penses-tu pouvoir monter en compétences sur les technos qu’il te
 manque ?
 
 -----------------
-
+prise en main, basic, intro : 2 jours
+maitriser : à partir d'un mois
 ----------------- 
