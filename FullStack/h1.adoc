@@ -92,8 +92,9 @@ puis : mvn tomcat7:deploy
 * Connais-tu Webpack ? A quoi ça sert ? Cite quelques exemples d’usages.
 
 -----------------
-Webpack est un outils de déboggage angular front
-il permet, sur un navigateur, de consulter les source, mettre des point d'arrêt etc
+Webpack est un gestionnaire de dépendance.
+Au build, il cherchera toutes les ressources nécessaires à ton app :
+Javascript, images, fonts, and CSS, dans un dependency graph
 ----------------- 
 
 * Sais-tu comment faire des optimisations côté Front ? Concaténation….
