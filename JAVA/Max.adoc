@@ -24,10 +24,26 @@ L'abstraction ne dépend jamais des détails, les détails dépendent de l'abstr
 ----------------- 
 
  * "Connaissez vous l'immutabilité ? si oui, à quoi ça sert ?"
+-----------------
+c'est le fait qu'un object, une fois créé, il est impossible de le modifier.
+ça sert à éviter les "side effects" en cas d'accès multithreadé à cet object par exemple.
+ceci etant dit, ca permet d'avoir un traitement purement fonctionnel et pas impératif.
+Si toutes les fontions accèdent à un object immutables et ne changent pas l'état de l'objet,
+c'est que nous avons réaliser le déterminisme de la programmation fontionnelle :  en répétant 
+le même programme avec le mêmes inputs, on aura les mêmes résultats.
+-----------------
 
  * Dans la pratique du TDD, comment procédez-vous ?
+-----------------
+- ecrire des tests non passants
+- ecrire du code jusqu'à ce que ça passe
+-----------------
  
  * "Qu'avez vous compris du DDD ?"
+-----------------
+
+
+-----------------
  
  * "Connaissez vous des algo ?"
  
