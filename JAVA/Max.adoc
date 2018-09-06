@@ -42,7 +42,6 @@ le même programme avec le mêmes inputs, on aura les mêmes résultats.
  * "Qu'avez vous compris du DDD ?"
 -----------------
 
-
 -----------------
  
  * "Connaissez vous des algo ?"
