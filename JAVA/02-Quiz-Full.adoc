@@ -695,16 +695,66 @@ ref: https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
 == Collections
 
  *  Why do we need collections in Java?
+-----------------  
+les arrays ont une taille fixe
+autres besoins : ensemble, map...
+abstractions : List, map ...
+-----------------   
  *  What are the important interfaces in the collection hierarchy?
+-----------------  
+Set, List et Queue
+Map
+-----------------   
  *  What are the important methods that are declared in the collection interface?
+-----------------  
+add, remove, size, contains...
+-----------------  
  *  Can you explain briefly about the List interface?
+-----------------  
+permet d'ajouter des elements (même dupliqués) 
+-----------------  
  *  Explain about ArrayList with an example?
+ 
  *  Can an ArrayList have duplicate elements?
+-----------------  
+oui
+-----------------  
  *  How do you iterate around an ArrayList using iterator?
+-----------------  
+List<String> liste =  new ArrayList<String>() ;
+liste.add("un") ;
+liste.add("deux") ;
+liste.add("trois") ;
+
+ // création d'un listIterator sur cette liste
+ListIterator<String> it = liste.listIterator() ;
+
+ while(it.hasNext()) {
+    // on ajoute un élément supplémentaire après chaque
+    // élément de la liste
+   String element = it.next() ;
+   it.add(element +  " et demi") ;
+}
+-----------------  
+ 
  *  How do you sort an ArrayList?
+-----------------  
+java.util.Collections
+Collections.sort() 
+-----------------  
  *  How do you sort elements in an ArrayList using comparable interface?
+-----------------  
+les elements de la liste doivent implémenter compareTo() de Comperable
+-----------------  
  *  How do you sort elements in an ArrayList using comparator interface?
+-----------------  
+les elements de la liste doivent implémenter compare() de Comparator.
+la différence c'est que compare prend deux objets en entrée.
+-----------------  
  *  What is vector class? How is it different from an ArrayList?
+-----------------  
+vector is sychronized, arrayList is not.
+-----------------   
  *  What is linkedList? What interfaces does it implement? How is it different from an ArrayList?
  *  Can you briefly explain about the Set interface?
  *  What are the important interfaces related to the Set interface?
